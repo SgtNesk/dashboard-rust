@@ -3,8 +3,9 @@ use std::sync::Mutex;
 use std::path::Path;
 
 pub struct Database {
-    conn: Mutex<Connection>,
+    pub conn: Mutex<Connection>, // Aggiunto `pub`
 }
+
 
 impl Database {
     pub fn new() -> Result<Self> {

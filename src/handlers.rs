@@ -1,5 +1,4 @@
 use warp::reply::Json;
-use warp::Reply;
 use std::sync::Arc;
 use rusqlite::params;
 use crate::database::Database;
